@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+<style type="text/css">
+	
+#car{
+
+
+	
+	display: block;
+	position: absolute;
+	
+	left: 5%;
+	background-repeat: repeat-x;
+
+}
+
+
+	 @keyframes moveRight{
+	100%{transform:translateX(-4200px);}
+
+
+	
+
+
+
+
+</style>
+
+	<title>Running game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h2 style="margin-left:40%;color: white;margin-bottom: 0px;">THE REAL KILLER</h2>
+<div class="background">
+	<div style="height:330px;width: 500%;background-image: url(img/world.png); position: absolute;display: block;bottom: 0%;left: 0%;
+	background-repeat:repeat-x;" id="surface"></div>
+	<div id="car">
+		
+	</div>
+
+</div>
+<button style="margin-left: 48%;margin-bottom: 1%;" onclick="play()" id="butt">Play</button>
+<div style="margin-bottom: 50px;">
+	<p style="margin-left: 43%;color: white;"> Before You Play Choice your  vehicle</p>
+<button style="margin-left: 39.50%" onclick="butt()" id="butt">Car</button>
+<button style="margin-left: 2%;" onclick="change()" id="butt">Mario</button>
+<button style="margin-left: 2%;" onclick="change1()" id="butt">Bike rider</button>
+</div>
+
+
+
+<script>
+	
+
+
+
+function play(){  
+document.getElementById("surface").style.animation = "moveRight 10s linear infinite ";
+
+
+
+
+}
+
+
+
+
+
+function butt(){  
+document.getElementById("car").innerHTML="<img src=img/car2.gif>";
+document.getElementById("car").style.bottom = "1px";
+document.getElementById("car").style.left= "50px";
+     
+
+
+
+}
+
+	function change(){
+document.getElementById("car").innerHTML="<img src=img/mario.gif>";
+document.getElementById("car").style.bottom = "35px";
+document.getElementById("car").style.left= "20px";
+
+
+	
+
+}
+	
+
+function change1(){
+document.getElementById("car").innerHTML="<img src=img/realc.gif>";
+
+document.getElementById("car").style.bottom = "12px";
+document.getElementById("car").style.left= "100px";
+
+
+
+	
+
+}
+
+	
+
+</script>
+</body>
+</html>

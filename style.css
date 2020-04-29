@@ -1,0 +1,44 @@
+body{
+	margin:0;
+	background-image:url("img/back2.jpg");
+	font-family: 'Anton', sans-serif;
+
+}
+.background{
+
+	height: 70vh;
+	width: 90vw;
+	border:2px solid white;
+	margin: 5rem auto;
+	
+	background-image:url("img/realback.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	box-shadow:  
+	1px 2px 30px black;
+	overflow-x: hidden;
+}
+
+button{
+	outline: none;
+	text-decoration: none;
+	border:3px solid white;
+	border-radius: 50px;
+	color:white;
+	background-color: transparent;
+	padding: 10px 20px;
+	font-weight: bolder;
+	font-size: 20px;
+	transition: 0.1s;
+
+}
+
+button:hover{
+	background-color: white;
+	color:green;
+
+}
+/*animatipj*/
+
+
